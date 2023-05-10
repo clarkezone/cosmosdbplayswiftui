@@ -30,9 +30,15 @@ struct ContentView: View {
             TextField("database id", text: $databaseid).padding()
             TextField("collectionid", text: $collectionid).padding()
             TextField("sql", text: $sqltext).padding()
+
+            NavigationLink(destination: ResultsView()) {
+Text("Results")            
+            }
             Button("CallCosmos") {
                 callCosmos()
             }
         }
+        .navigationBarTitle("Config")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
