@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CachedManifest</key>
+	<dict>
+		<key>manifestData</key>
+		<data>
+		eyJkZXBlbmRlbmNpZXMiOltdLCJkaXNwbGF5TmFtZSI6IkNvc21vc0RCUmVz
+		dFRlc3QiLCJwYWNrYWdlS2luZCI6eyJyb290Ijp7fX0sInBsYXRmb3JtcyI6
+		W3sib3B0aW9ucyI6W10sInBsYXRmb3JtTmFtZSI6ImlvcyIsInZlcnNpb24i
+		OiIxNi4wIn1dLCJwcm9kdWN0cyI6W3sibmFtZSI6IkNvc21vc0RCUmVzdFRl
+		c3QiLCJzZXR0aW5ncyI6W3siZGlzcGxheVZlcnNpb24iOlsiMS4wIl19LHsi
+		YnVuZGxlVmVyc2lvbiI6WyIxIl19LHsiaU9TQXBwSW5mbyI6W3siYWNjZW50
+		Q29sb3IiOnsicHJlc2V0Q29sb3IiOnsicHJlc2V0Q29sb3IiOnsicmF3VmFs
+		dWUiOiJyZWQifX19LCJhcHBJY29uIjp7InBsYWNlaG9sZGVyIjp7Imljb24i
+		OnsicmF3VmFsdWUiOiJjbG91ZCJ9fX0sImNhcGFiaWxpdGllcyI6W10sInN1
+		cHBvcnRlZERldmljZUZhbWlsaWVzIjpbInBhZCIsInBob25lIl0sInN1cHBv
+		cnRlZEludGVyZmFjZU9yaWVudGF0aW9ucyI6W3sicG9ydHJhaXQiOnt9fSx7
+		ImxhbmRzY2FwZVJpZ2h0Ijp7fX0seyJsYW5kc2NhcGVMZWZ0Ijp7fX0seyJw
+		b3J0cmFpdFVwc2lkZURvd24iOnsiY29uZGl0aW9uIjp7ImRldmljZUZhbWls
+		aWVzIjpbInBhZCJdfX19XX1dfV0sInRhcmdldHMiOlsiQXBwTW9kdWxlIl0s
+		InR5cGUiOnsiZXhlY3V0YWJsZSI6bnVsbH19XSwidGFyZ2V0TWFwIjp7IkFw
+		cE1vZHVsZSI6eyJkZXBlbmRlbmNpZXMiOltdLCJleGNsdWRlIjpbXSwibmFt
+		ZSI6IkFwcE1vZHVsZSIsInBhdGgiOiIuIiwicmVzb3VyY2VzIjpbXSwic2V0
+		dGluZ3MiOlt7ImtpbmQiOnsiZW5hYmxlVXBjb21pbmdGZWF0dXJlIjp7Il8w
+		IjoiQmFyZVNsYXNoUmVnZXhMaXRlcmFscyJ9fSwidG9vbCI6InN3aWZ0In1d
+		LCJ0eXBlIjoiZXhlY3V0YWJsZSJ9fSwidGFyZ2V0cyI6W3siZGVwZW5kZW5j
+		aWVzIjpbXSwiZXhjbHVkZSI6W10sIm5hbWUiOiJBcHBNb2R1bGUiLCJwYXRo
+		IjoiLiIsInJlc291cmNlcyI6W10sInNldHRpbmdzIjpbeyJraW5kIjp7ImVu
+		YWJsZVVwY29taW5nRmVhdHVyZSI6eyJfMCI6IkJhcmVTbGFzaFJlZ2V4TGl0
+		ZXJhbHMifX0sInRvb2wiOiJzd2lmdCJ9XSwidHlwZSI6ImV4ZWN1dGFibGUi
+		fV0sInRvb2xzVmVyc2lvbiI6eyJfdmVyc2lvbiI6IjUuOC4wIn19
+		</data>
+		<key>manifestHash</key>
+		<data>
+		a+kbn8h8tUnv5VsNDkwcLVav21l/QHaCNX1niUZNbs4=
+		</data>
+		<key>schemaVersion</key>
+		<integer>4</integer>
+		<key>swiftPMVersionString</key>
+		<string>5.8.0</string>
+	</dict>
+</dict>
+</plist>
