@@ -15,7 +15,8 @@ struct ContentView: View {
             do {
                 let json = try await callCosmosDB(verb:verb, accountName: $accountname.wrappedValue, masterKey: $cosmoskey.wrappedValue, databaseId: $databaseid.wrappedValue, collectionId: $collectionid.wrappedValue, 
                                                   sqlQuery: $sqltext.wrappedValue)
-                print("JSON Response: \(json)")
+    
+                //print("JSON Response: \(json)")
                 
             } catch {
                 print("Error: \(error)")

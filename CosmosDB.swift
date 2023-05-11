@@ -2,6 +2,21 @@ import SwiftUI
 import CryptoKit
 import Foundation
 
+struct Document: Codable {
+    let id: String
+    let partitionid: String
+    let BatteryLevel: Int
+    let Altitude: Int
+    let Lat: Double
+    let Lon: Double
+    let BatteryState: String
+    let Timestamp: String
+}
+
+struct MyData: Codable {
+    let Documents: [Document]
+}
+
 func callCosmosDB(verb:String, accountName: String, masterKey: String, databaseId: String, collectionId: String, sqlQuery: String) async throws -> Any {
     var resourceId = ""
     var resourceLink = ""
@@ -43,9 +58,22 @@ func callCosmosDB(verb:String, accountName: String, masterKey: String, databaseI
         request.httpBody = try JSONSerialization.data(withJSONObject: queryPayload, options: [])
     }
     
-    let (data, _) = try await URLSession.shared.data(for: request)
-    let json = try JSONSerialization.jsonObject(with: data, options: [])
-    return json
+    let (jsondata, _) = try await URLSession.shared.data(for: request)
+//    let str = String(decoding: data, as: UTF8.self)
+  //  print ("Data: \(str)")
+    
+    do {
+        let decoder = JSONDecoder()
+        let returndata = try decoder.decode(MyData.self, from: jsondata)
+        print("Decoded \(returndata.Documents.count) documents)")
+        return returndata
+    } catch {
+        print("Error: \(error)")
+    }
+return ""
+
+//    let json = try JSONSerialization.jsonObject(with: data, options: [])
+  //  return json
 }
 
 
