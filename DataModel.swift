@@ -29,6 +29,8 @@ class DataModel: ObservableObject {
                     for item in mappoints.Documents {
                         items.append(item)
                     }
+                } else {
+                    print("no dice")
                 }
                 isLoading=false
                 //print("JSON Response: \(json)")

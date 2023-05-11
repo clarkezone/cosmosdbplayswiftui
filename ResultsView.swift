@@ -13,7 +13,7 @@ struct ResultsView: View {
                     ForEach($dataModel.items) {
                         $item in
                         NavigationLink(destination: GeoItemView(item:item)) {
-                            Text("Item")
+                            Text(item.Timestamp)
                         }
                     }
                 }
