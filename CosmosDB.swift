@@ -2,7 +2,7 @@ import SwiftUI
 import CryptoKit
 import Foundation
 
-struct Document: Codable {
+struct Document: Codable, Identifiable {
     let id: String
     let partitionid: String
     let BatteryLevel: Int

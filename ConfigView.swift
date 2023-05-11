@@ -3,40 +3,18 @@ import CryptoKit
 import Foundation
 
 struct ContentView: View {
-    @AppStorage("cosmosmasterkey") private var cosmoskey = ""
-    @AppStorage("accountname") private var accountname = ""
-    @AppStorage("databaseid") private var databaseid = ""
-    @AppStorage("collectionid") private var collectionid = ""
-    @AppStorage("sql") private var sqltext = ""
-    
-    func callCosmos() {
-        let verb = $sqltext.wrappedValue != "" ? "POST" : "GET"
-        Task.init {
-            do {
-                let json = try await callCosmosDB(verb:verb, accountName: $accountname.wrappedValue, masterKey: $cosmoskey.wrappedValue, databaseId: $databaseid.wrappedValue, collectionId: $collectionid.wrappedValue, 
-                                                  sqlQuery: $sqltext.wrappedValue)
-    
-                //print("JSON Response: \(json)")
-                
-            } catch {
-                print("Error: \(error)")
-            }
-        }
-    }
+    @EnvironmentObject var dataModel: DataModel
     
     var body: some View {
         VStack {
-            TextField("Enter key", text: $cosmoskey).padding()
-            TextField("Enter account name", text: $accountname).padding()
-            TextField("database id", text: $databaseid).padding()
-            TextField("collectionid", text: $collectionid).padding()
-            TextField("sql", text: $sqltext).padding()
+            TextField("Enter key", text: $dataModel.cosmoskey).padding()
+            TextField("Enter account name", text: $dataModel.accountname).padding()
+            TextField("database id", text: $dataModel.databaseid).padding()
+            TextField("collectionid", text: $dataModel.collectionid).padding()
+            TextField("sql", text: $dataModel.sqltext).padding()
 
             NavigationLink(destination: ResultsView()) {
-Text("Results")            
-            }
-            Button("CallCosmos") {
-                callCosmos()
+                Text("Load map points")            
             }
         }
         .navigationBarTitle("Config")
